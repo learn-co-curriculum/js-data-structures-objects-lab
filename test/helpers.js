@@ -10,7 +10,7 @@ const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf-8
 
 const babelResult = babel.transformFileSync(
   path.resolve(__dirname, '..', 'index.js'), {
-    presets: ["@babel/preset-env"]
+    presets: ['@babel/env']
   }
 );
 
